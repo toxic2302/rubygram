@@ -1,0 +1,17 @@
+<% @posts.each do |x| %>
+    <div class="posts-wrapper">
+      <div class="row">
+        <div class="post">
+          <div class="post-head name">
+            Florian Kolb (todo: user and post relationship)
+          </div>
+          <div class="image center-block">
+            <%= image_tag(x.image.url(:medium), class: 'img-responsive') %>
+          </div>
+          <p class="caption">
+            <%= x.description %>
+          </p>
+        </div>
+      </div>
+    </div>
+<% end %>
